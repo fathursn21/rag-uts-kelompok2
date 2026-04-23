@@ -118,15 +118,22 @@ Semua konfigurasi utama ada di `src/config.py` (atau langsung di setiap file):
 
 ## 📊 Hasil Evaluasi
 
-*(Isi setelah pengujian selesai)*
-
 | # | Pertanyaan | Jawaban Sistem | Jawaban Ideal | Skor (1-5) |
-|---|-----------|----------------|---------------|-----------|
-| 1 | ... | ... | ... | ... |
-| 2 | ... | ... | ... | ... |
+|---|---|---|---|:---:|
+| 1 | Jika saya meminum 1 liter minyak, apa yang akan terjadi pada tubuh saya? | Menjelaskan ambang batas konsumsi lemak (47g), risiko steatore (feses berminyak), dan dampak kolesterol berdasarkan regulasi kesehatan. | Penekanan pada efek instan: diare berat, feses cair, mual, dan sakit perut akibat ketidakmampuan mencerna lemak masif. | 4 |
+| 2 | Saya meminum es teh jumbo sebanyak 10 gelas, apakah nanti saya akan terkena diabetes? | Mengacu pada batasan gula harian (50g) dan prinsip 3J, serta menyatakan tidak ada info spesifik tentang "10 gelas es teh" secara langsung. | Menegaskan bahwa konsumsi drastis tersebut meningkatkan risiko diabetes secara signifikan, terutama jika menjadi kebiasaan. | 4 |
+| 3 | Saya didiagnosis terkena diabetes, pola hidup seperti apa yang perlu saya ikuti? | Memberikan panduan komprehensif: Diet 3J, aktivitas fisik (kapan harus mulai/tunda), kepatuhan obat, dan kontrol medis. | Penerapan konsisten 3J (Jumlah, Jadwal, Jenis), aktivitas fisik, dan pemantauan mandiri untuk mencegah komplikasi. | 5 |
+| 4 | Berapa anjuran konsumsi sayuran dan buah-buahan per hari bagi remaja dan orang dewasa? | Menyebutkan angka 400-600 gram per hari dengan rincian porsi mangkuk/buah berdasarkan Permenkes dan WHO. | Konsumsi sayuran dan buah-buahan menurut Kemenkes RI adalah 400-600 gram per orang per hari. | 5 |
+| 5 | Jika saya memakan 10 kg tempe, apakah saya tidak perlu makan selama 2 hari? | Menjelaskan prinsip pola makan teratur, keseimbangan nutrisi ("Piring Makanku"), dan kapasitas lambung yang tidak mendukung ide tersebut. | Secara fisiologis tidak disarankan dan tidak bisa menggantikan frekuensi makan selama 2 hari. | 5 |
+| 6 | Apakah nasi goreng dapat menyebabkan pusing? | Menyatakan tidak ada informasi di dokumen, namun menyarankan hindari makanan berlemak jika mual/pusing. | Ya, bisa disebabkan kontaminasi bakteri *Bacillus cereus*, kadar lemak/garam tinggi, atau perubahan tekanan darah. | 3 |
+| 7 | Apa risiko kesehatan jika konsumsi gula, natrium, dan lemak berlebih? | Merinci risiko spesifik: Diabetes tipe-2, hipertensi, stroke, serangan jantung, hingga ketoasidosis dan obesitas. | Meningkatkan obesitas, diabetes tipe 2, hipertensi, stroke, penyakit jantung koroner, hingga perlemakan hati. | 5 |
+| 8 | Jelaskan secara ilmiah penyebab masuk angin? | Mengaitkan istilah tersebut dengan paparan suhu dingin, infeksi virus (influenza), dan faktor lingkungan (debu/kipas angin). | Menurunnya daya tahan tubuh akibat cuaca, kurang tidur, atau telat makan, memicu kerentanan infeksi atau akumulasi gas. | 4 |
+| 9 | Apakah makan makanan yang berminyak dapat menyebabkan penyakit kronis? | Mengonfirmasi hubungan lemak trans/jenuh dengan kolesterol, penyakit jantung koroner, diabetes, dan kanker. | Ya, risiko utama berasal dari lemak jenuh, lemak trans, dan kalori tinggi yang memicu obesitas dan penyakit kardiovaskular. | 5 |
+| 10 | Pada ibu hamil trimester 1, berapa porsi protein hewani, sayur, buah, serta batasan garam dan air? | Merinci: 4 porsi protein hewani, 4 porsi sayur, 4 porsi buah (estimasi), 1 sdt garam, dan 8-12 gelas air. | Fokus pada kualitas: 3-4 porsi protein hewani, 4 porsi sayur, dan 4 porsi buah per hari. | 5 |
 
-**Rata-rata Skor:** ...  
-**Analisis:** ...
+**Rata-rata Skor:** 4.5  
+**Analisis:** .Kelemahan utama sistem RAG kelompok kami terletak pada ketergantungan yang terlalu kaku terhadap teks dokumen (strict context), sehingga gagal melakukan penalaran logis terhadap kasus ekstrem seperti konsumsi dosis tinggi dan risiko penyakit akut yang tidak tertulis secara eksplisit, serta adanya kendala chunking yang menyebabkan informasi pada tabel porsi gizi terpotong. 
+Saran perbaikan ke depannya yaitu dengan memperbesar ukuran CHUNK_SIZE misal menjadi 1000 agar informasi tabel tidak terpotong, serta memperbarui Prompt pada model Gemini agar lebih memberikan analisis logis atau peringatan medis meskipun informasi spesifik tidak tertulis di dokumen. Selain itu, menambah TOP_K agar sistem mendapatkan lebih banyak referensi dokumen untuk merangkai jawaban yang lebih relevan.
 
 ---
 
