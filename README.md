@@ -134,12 +134,6 @@ Semua konfigurasi utama ada di `src/config.py` (atau langsung di setiap file):
 
 <img src="docs/arsitektur.jpeg" alt="Diagram Arsitektur RAG" width="800">
 
-```
-[Dokumen] → [Loader] → [Splitter] → [Embedding] → [Vector DB]
-                                                         ↕
-[User Query] → [Query Embed] → [Retriever] → [Prompt] → [LLM] → [Jawaban]
-```
-
 ---
 
 ## 📚 Referensi & Sumber
