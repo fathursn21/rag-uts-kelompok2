@@ -1,0 +1,16 @@
+# Manajemen Environment
+python-dotenv>=0.9.9
+
+# Pemrosesan Data & Dokumen
+pandas>=3.0.2
+pypdf>=6.10.2
+
+# Vector Database & Embeddings
+chromadb>=1.5.8
+sentence-transformers>=5.4.1
+
+# LLM API
+google-genai>=1.73.1
+
+#uncomment jika menggunakan streamlit
+#streamlit>=1.56.0
