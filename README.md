@@ -15,10 +15,10 @@ Mahasiswa mengisi, memodifikasi, dan mengembangkan kode ini sesuai topik kelompo
 | Kevin Rafael Suryatmoko  | 244311017 | Data Engineer         |
 | Muhammad Rifqi Maulana  | 244311018 | Data Analyst         |
 
-**Topik Domain:** *Kesehatan*
+**Topik Domain:** *Kesehatan*  
 **Stack yang Dipilih:** *From Scratch*  
 **LLM yang Digunakan:** *Gemini*  
-**Vector DB yang Digunakan:** *ChromaDB*
+**Vector DB yang Digunakan:** *ChromaDB*  
 
 ---
 
@@ -132,7 +132,7 @@ Semua konfigurasi utama ada di `src/config.py` (atau langsung di setiap file):
 
 ## 🏗️ Arsitektur Sistem
 
-<img src="docs/arsitektur.png" alt="Diagram Arsitektur RAG" width="800">
+<img src="docs/arsitektur.jpeg" alt="Diagram Arsitektur RAG" width="800">
 
 ```
 [Dokumen] → [Loader] → [Splitter] → [Embedding] → [Vector DB]
