@@ -42,4 +42,4 @@ logs/
 #dokumen
 data/ppk-primer-idi-2017.pdf
 data/*.pdf
-data/*.csv
+# data/*.csv
