@@ -37,7 +37,7 @@ with st.sidebar:
     
     top_k = st.slider(
         "Jumlah dokumen relevan (top-k)",
-        min_value=1, max_value=30, value=3,
+        min_value=1, max_value=30, value=20,
         help="Berapa banyak chunk yang diambil dari vector database"
     )
     
