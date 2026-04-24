@@ -25,20 +25,20 @@ Mahasiswa mengisi, memodifikasi, dan mengembangkan kode ini sesuai topik kelompo
 ## 🗂️ Struktur Proyek
 
 ```
-rag-uts-[nama-kelompok]/
-├── data/                    # Dokumen sumber Anda (PDF, TXT, dll.)
-│   └── sample.txt           # Contoh dokumen (ganti dengan dokumen Anda)
+rag-uts-kelompok2/
+├── data/                    # Dokumen sumber (PDF, TXT)
+│   └── sample.txt           # dokumen
 ├── src/
-│   ├── indexing.py          # 🔧 WAJIB DIISI: Pipeline indexing
-│   ├── query.py             # 🔧 WAJIB DIISI: Pipeline query & retrieval
-│   ├── embeddings.py        # 🔧 WAJIB DIISI: Konfigurasi embedding
+│   ├── indexing.py          # Pipeline indexing
+│   ├── query.py             # Pipeline query & retrieval
+│   ├── embeddings.py        # Konfigurasi embedding
 │   └── utils.py             # Helper functions
 ├── ui/
-│   └── app.py               # 🔧 WAJIB DIISI: Antarmuka Streamlit
+│   └── app.py               # Antarmuka Streamlit
 ├── docs/
-│   └── arsitektur.png       # 📌 Diagram arsitektur (buat sendiri)
+│   └── arsitektur.png       # Diagram arsitektur
 ├── evaluation/
-│   └── hasil_evaluasi.xlsx  # 📌 Tabel evaluasi 10 pertanyaan
+│   └── hasil_evaluasi.xlsx  # Tabel evaluasi 10 pertanyaan
 ├── notebooks/
 │   └── 01_demo_rag.ipynb    # Notebook demo dari hands-on session
 ├── .env.example             # Template environment variables

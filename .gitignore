@@ -40,6 +40,6 @@ logs/
 *.bak
 
 #dokumen
-data/ppk-primer-idi-2017.pdf
-data/*.pdf
+# data/ppk-primer-idi-2017.pdf
+# data/*.pdf
 # data/*.csv
