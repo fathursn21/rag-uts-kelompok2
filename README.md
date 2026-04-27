@@ -148,7 +148,17 @@ Saran perbaikan ke depannya yaitu dengan memperbesar ukuran CHUNK_SIZE misal men
 - Framework: *-*
 - LLM: *Gemini*
 - Vector DB: *ChromaDB*
-- Tutorial yang digunakan: *(cantumkan URL)*
+- Tutorial yang digunakan: *https://github.com/mrdbourke/simple-local-rag*
+- Sumber data:
+
+| No | Judul Dokumen | Penulis / Penerbit | Tahun | Keterangan / Lisensi |
+|:---:|---|---|:---:|---|
+| 1 | Buku Pedoman Manajemen Diabetes untuk Pasien dan Keluarga | Ns. Ni Wayan Trisnadewi, dkk. (Baswara Press) | 2022 | CC-BY-NC-ND 4.0 |
+| 2 | Panduan Praktik Klinis Bagi Dokter di Fasilitas Pelayanan Kesehatan Tingkat Pertama | Pengurus Besar Ikatan Dokter Indonesia (PB IDI) | 2017 | Hak Cipta © 2017 PB IDI |
+| 3 | Buku Kesehatan Ibu dan Anak (KIA) | Kementerian Kesehatan Republik Indonesia | 2024 | Hak Cipta © Kemenkes RI |
+| 4 | Peraturan Menteri Kesehatan RI Nomor 41 Tahun 2014 tentang Pedoman Gizi Seimbang | Kementerian Kesehatan Republik Indonesia | 2014 | Domain Publik |
+| 5 | Indo-Online Health Consultation & Nutrition Dataset | Dataset Publik | 2023 | Ekstraksi sesi tanya jawab medis dan data nutrisi makanan lokal |
+| 6 | Indonesian Food and Drink Nutrition Dataset | Anas Fikri Hanif (Kaggle) / Kemenkes RI | 2024 | Domain Publik. Diambil dari Tabel Komposisi Pangan Indonesia (https://www.panganku.org)|
 
 ---
 
